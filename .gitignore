@@ -1,0 +1,20 @@
+## OS X
+##############################
+.DS_Store
+
+##############################
+## JavaScript
+##############################
+node_modules/
+results/
+mochawesome-report/
+test-results.xml
+.vscode
+package-lock.json
+videos
+reports
+output.html
+e2eReport.html
+*.cypress.env.json
+.~token.json.*
+.~credentials.json.*

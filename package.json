@@ -1,0 +1,11 @@
+{
+  "name": "boilerplate-k6",
+  "version": "1.0.0",
+  "description": "This is a performance testing framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd specs && k6 run getApi.js"
+  },
+  "author": "Subrato Sarkar",
+  "license": "ISC"
+}
