@@ -1,9 +1,10 @@
 import http from 'k6/http'
 import { sleep } from 'k6'
+import concurrency from '../config/concurrency.js'
 
 export const options = {
-    vus: 10,
-    duration: '10s',
+    vus: concurrency.vus,
+    duration: concurrency.duration,
 }
 
 export default function () {
