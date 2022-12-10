@@ -6,10 +6,10 @@ import authToken from '../config/authToken.js'
 import perfUtils from '../utils/perfUtils.js'
 import { check } from 'k6'
 
-const RANDOM_KEY = perfUtils.generateAlphaNumericNo(6);
+const random = perfUtils.generateAlphaNumericNo(6);
 
-const email = RANDOM_KEY + '@email.com';
-const name = 'Cypress_Test_' + RANDOM_KEY;
+const email = random + '@email.com';
+const name = 'Cypress_Test_' + random;
 const gender = 'male';
 const status = 'active';
 
