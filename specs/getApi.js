@@ -1,13 +1,11 @@
 import http from 'k6/http'
 import { sleep } from 'k6'
 import concurrency from '../config/concurrency.js'
+import urls from '../config/urls.js'
 
-export const options = {
-    vus: concurrency.vus,
-    duration: concurrency.duration,
-}
+export const options = concurrency
 
 export default function () {
-    http.get ('https://gorest.co.in/public/v2/users');
+    http.get (urls.getAllUsers);
     sleep (1);
 }
