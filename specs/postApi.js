@@ -9,7 +9,7 @@ import { check } from 'k6'
 const random = perfUtils.generateAlphaNumericNo(6);
 
 const email = random + '@email.com';
-const name = 'Cypress_Test_' + random;
+const name = 'Perf_Test_' + random;
 const gender = 'male';
 const status = 'active';
 
