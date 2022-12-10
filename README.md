@@ -1,8 +1,13 @@
+boilerplate-k6
+
 Author: Subrato Sarkar
 ------------------------------
 ```
 This is a performance testing framework
-
-boilerplate-k6
-
 ````
+
+How to run
+--------------------------
+```
+npm run perf
+```
