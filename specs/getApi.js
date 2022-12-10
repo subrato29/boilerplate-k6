@@ -6,6 +6,6 @@ import endpoints from '../config/endpoints.js'
 export const options = concurrency
 
 export default function () {
-    http.get (endpoints.getAllUsers ());
+    http.get (endpoints.getAllUsers());
     sleep (1);
 }

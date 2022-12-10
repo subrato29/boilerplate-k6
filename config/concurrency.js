@@ -1,4 +1,4 @@
 module.exports = {
-    vus: 10,
+    vus: 5,
     duration: '3s',
 }
