@@ -11,21 +11,21 @@ import requestBody from '../testData/requestBody.js'
 export const options = concurrency
 
 export default function () {
-    const endpoint = endpoints.getAllUsers();
-    let res = http.post (endpoint, requestBody.create, {
+    const ENDPOINT = endpoints.getAllUsers();
+    let res = http.post (ENDPOINT, requestBody.create, {
         headers: authToken,
     })
     check(res, {
         'is create status 201': (res) => res.status == 201
     })
-    const id = res.json().id;
-    res = http.put (endpoint + '/' + id, requestBody.update, {
+    const ID_KEY = res.json().id;
+    res = http.put (`${ENDPOINT}/${ID_KEY}`, requestBody.update, {
         headers: authToken,
     })
     check(res, {
         'is update status 200': (res) => res.status == 200
     })
-    res = http.del (endpoint + '/' + id, {
+    res = http.del (`${ENDPOINT}/${ID_KEY}`, {
         headers: authToken,
     })
     check(res, {
