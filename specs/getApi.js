@@ -1,3 +1,5 @@
+'use strict'
+
 import http from 'k6/http'
 import { sleep } from 'k6'
 import concurrency from '../config/concurrency.js'
