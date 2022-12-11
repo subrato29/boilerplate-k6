@@ -11,21 +11,23 @@ export const options = concurrency
 
 export default function () {
     const ENDPOINT = endpoints.getAllUsers();
+    const BEARER_TOKEN = authToken;
+
     let res = http.post (ENDPOINT, requestBody.create, {
-        headers: authToken,
+        headers: BEARER_TOKEN,
     })
     check(res, {
         'is create status 201': (res) => res.status == 201
     })
     const ID_KEY = res.json().id;
     res = http.put (`${ENDPOINT}/${ID_KEY}`, requestBody.update, {
-        headers: authToken,
+        headers: BEARER_TOKEN,
     })
     check(res, {
         'is update status 200': (res) => res.status == 200
     })
     res = http.del (`${ENDPOINT}/${ID_KEY}`, {
-        headers: authToken,
+        headers: BEARER_TOKEN,
     })
     check(res, {
         'is delete status 404': (res) => res.status == 404
