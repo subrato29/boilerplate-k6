@@ -2,12 +2,12 @@
 
 import http from 'k6/http'
 import { check, sleep } from 'k6'
-import concurrency from '../config/concurrency.js'
+import traffic from '../config/traffic.js'
 import endpoints from '../config/endpoints.js'
 import authToken from '../config/authToken.js'
 import requestBody from '../testData/requestBody.js'
 
-export const options = concurrency
+export const options = traffic
 
 export default function () {
     const ENDPOINT = endpoints.getAllUsers();
