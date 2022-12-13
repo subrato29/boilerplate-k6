@@ -2,12 +2,12 @@
 
 import http from 'k6/http'
 import { check, sleep } from 'k6'
-import traffic from '../config/traffic.js'
+import scenarios from '../config/scenarios.js'
 import endpoints from '../config/endpoints.js'
 import authToken from '../config/authToken.js'
 import requestBody from '../testData/requestBody.js'
 
-export const options = traffic
+export const options = scenarios.basic
 
 export default function () {
     const ENDPOINT = endpoints.getAllUsers();

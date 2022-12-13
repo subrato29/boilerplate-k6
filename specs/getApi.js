@@ -2,10 +2,10 @@
 
 import http from 'k6/http'
 import { check, sleep } from 'k6'
-import traffic from '../config/traffic.js'
+import scenarios from '../config/scenarios.js'
 import endpoints from '../config/endpoints.js'
 
-export const options = traffic
+export const options = scenarios.shared
 
 export default function () {
     const res = http.get (endpoints.getAllUsers());

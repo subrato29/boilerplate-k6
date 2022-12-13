@@ -4,6 +4,8 @@
   "description": "This is a performance testing framework",
   "main": "index.js",
   "scripts": {
+    "get": "cd specs && k6 run getApi.js",
+    "crud": "cd specs && k6 run crudApi.js",
     "perf": "cd specs && k6 run getApi.js ; k6 run crudApi.js"
   },
   "author": "Subrato Sarkar",
