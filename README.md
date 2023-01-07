@@ -18,7 +18,7 @@ Using k6, you can test the reliability and performance of your systems and catch
 
 k6 is developed by Grafana Labs and the community.
 
-K6 does not run on NodeJS.
+K6 does not run in NodeJS.
 
 ```
 
