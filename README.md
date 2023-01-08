@@ -19,7 +19,7 @@ Using k6, you can test the reliability and performance of your systems and catch
 k6 is developed by Grafana Labs and the community.
 
 K6 does not run in NodeJS.
-
+```
 
 Executors
 ------------------------------
@@ -32,8 +32,6 @@ Executors are the workhorses of the k6 execution engine. Each one schedules VUs 
 
 - Per VU iterations
     Each VU executes an exact number of iterations. The total number of completed iterations will be vus * iterations.
-```
-
 ```
 
 Official documentation
