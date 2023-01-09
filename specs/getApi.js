@@ -8,7 +8,7 @@ import endpoints from '../config/endpoints.js'
 export const options = scenarios.shared
 
 export default function () {
-    const res = http.get (endpoints.getAllUsers());
+    const res = http.get (endpoints.getAllUsers);
     check(res, {
         'is get status 200': (res) => res.status == 200
     })

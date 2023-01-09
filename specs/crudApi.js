@@ -10,7 +10,7 @@ import requestBody from '../testData/requestBody.js'
 export const options = scenarios.basic
 
 export default function () {
-    const ENDPOINT = endpoints.getAllUsers();
+    const ENDPOINT = endpoints.getAllUsers;
     const BEARER_TOKEN = authToken;
 
     let res = http.post (ENDPOINT, requestBody.create, {

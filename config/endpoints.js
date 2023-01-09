@@ -1,9 +1,7 @@
-var endpoints = {
-    baseUrl: () => {
-        return 'https://gorest.co.in';
-    },
-    getAllUsers: () => {
-        return endpoints.baseUrl() + '/public/v2/users';
+const endpoints = {
+    baseUrl: 'https://gorest.co.in',
+    get getAllUsers() {
+        return `${this.baseUrl}/public/v2/users`;
     },
 }
 
