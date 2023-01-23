@@ -9,16 +9,17 @@ Author: Subrato Sarkar
 
 ````
 
-What is k6?
+What is `k6`?
 -----------------------------------
 ```
-Grafana k6 is an open-source load testing tool that makes performance testing easy and productive for engineering teams. k6 is free, developer-centric, and extensible.
+Grafana `k6` is an open-source load testing tool that makes performance testing easy and productive for engineering teams. k6 is free, developer-centric, and extensible.
 
 Using k6, you can test the reliability and performance of your systems and catch performance regressions and problems earlier. k6 will help you to build resilient and performant applications that scale.
 
 k6 is developed by Grafana Labs and the community.
 
 K6 does not run in NodeJS.
+
 ```
 
 Executors
@@ -36,6 +37,7 @@ Executors are the workhorses of the k6 execution engine. Each one schedules VUs 
     Each VU executes an exact number of iterations. The total number of completed iterations will be vus * iterations.
     - When to use
         Use this executor if you need a specific amount of VUs to complete the same amount of iterations. This can be useful when you have fixed sets of test data that you want to partition between VUs.
+        
 ```
 
 Official documentation
@@ -49,13 +51,13 @@ Installation
 --------------------------------
 ```
 For macOS, using Homebrew
-brew install k6
+`brew install k6`
 
 ```
 
 How to run
 --------------------------
 ```
-npm run perf
+`npm run perf`
 
 ```
