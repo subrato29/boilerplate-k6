@@ -22,7 +22,7 @@ k6 run -o cloud script.js
 
 ```
 
-Cloud address of remote execution
+k6 cloud dashboard of remote execution
 --------------------------------
 ```
 https://app.k6.io/projects/3624170
