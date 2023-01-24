@@ -27,13 +27,13 @@ Executors
 ```
 Executors are the workhorses of the k6 execution engine. Each one schedules VUs and iterations differently, and you'll choose one depending on the type of traffic you want to model to test your services.
 
-- Shared iterations
+- `Shared iterations`
     A fixed amount of iterations are "shared" between a number of VUs. The test ends once all iterations are executed.
     Iterations are not guaranteed to be evenly distributed with this executor. VU that executes faster will complete more iterations than slower VUs. 
     - When to use
         This executor is suitable when you want a specific amount of VUs to complete a fixed number of total iterations, and the amount of iterations per VU is not important. 
 
-- Per VU iterations
+- `Per VU iterations`
     Each VU executes an exact number of iterations. The total number of completed iterations will be vus * iterations.
     - When to use
         Use this executor if you need a specific amount of VUs to complete the same amount of iterations. This can be useful when you have fixed sets of test data that you want to partition between VUs.
