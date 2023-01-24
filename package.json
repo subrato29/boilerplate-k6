@@ -6,7 +6,8 @@
   "scripts": {
     "get": "cd specs && k6 run getApi.js",
     "crud": "cd specs && k6 run crudApi.js",
-    "perf": "cd specs && k6 run getApi.js ; k6 run crudApi.js"
+    "perf": "cd specs && k6 run getApi.js ; k6 run crudApi.js",
+    "cloud": "cd specs && k6 cloud getApi.js ; k6 cloud crudApi.js"
   },
   "author": "Subrato Sarkar",
   "license": "ISC"

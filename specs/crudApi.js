@@ -30,7 +30,7 @@ export default function () {
         headers: BEARER_TOKEN,
     })
     check(res, {
-        'is delete status 404': (res) => res.status == 404
+        'is delete status 204': (res) => res.status == 204
     })
     sleep (3);
 }
