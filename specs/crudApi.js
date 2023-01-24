@@ -26,7 +26,7 @@ export default function () {
     check(res, {
         'is update status 200': (res) => res.status == 200
     })
-    res = http.del (`${ENDPOINT}/${id}`, {
+    res = http.del (`${ENDPOINT}/${id}`, null, {
         headers: BEARER_TOKEN,
     })
     check(res, {
