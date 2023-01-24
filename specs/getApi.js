@@ -5,8 +5,10 @@ import { check, sleep } from 'k6'
 import scenarios from '../config/scenarios.js'
 import endpoints from '../config/endpoints.js'
 
+//init
 export const options = scenarios.shared
 
+//test scenario
 export default function () {
     const res = http.get (endpoints.getAllUsers);
     check(res, {
