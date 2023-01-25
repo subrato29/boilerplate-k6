@@ -66,3 +66,13 @@ Run in k6 cloud
 ```
 `npm run cloud`
 ```
+
+Local run
+```
+Locally k6 run on `6565` port
+`http://127.0.0.1:6565/`
+
+If user wants to run different port, the port can be passed as argument as below
+`k6 run k6test.js -- address=:5050`
+
+```
