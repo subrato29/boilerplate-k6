@@ -4,10 +4,9 @@
   "description": "This is a performance testing framework",
   "main": "index.js",
   "scripts": {
-    "get": "cd specs && k6 run getApi.js",
-    "crud": "cd specs && k6 run crudApi.js",
-    "perf": "cd specs && k6 run getApi.js ; k6 run crudApi.js ; k6 run batchReq.js",
-    "cloud": "cd specs && k6 cloud getApi.js ; k6 cloud crudApi.js ; k6 cloud batchReq.js"
+    "perf": "cd specs && k6 run getApi.js ; k6 run crudApi.js ; k6 run batchReq.js ; k6 run thresholdTest.js",
+    "cloud": "cd specs && k6 cloud getApi.js ; k6 cloud crudApi.js ; k6 cloud batchReq.js ; k6 cloud thresholdTest.js",
+    "single": "cd specs && k6 run thresholdTest.js"
   },
   "author": "Subrato Sarkar",
   "license": "ISC"

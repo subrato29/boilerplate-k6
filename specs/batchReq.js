@@ -1,3 +1,5 @@
+'use strict'
+
 import http from 'k6/http';
 import { check } from 'k6';
 import endpoints from '../config/endpoints.js'
