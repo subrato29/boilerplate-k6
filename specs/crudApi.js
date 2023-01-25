@@ -20,13 +20,14 @@ export default function () {
         'is create status 201': (res) => res.status == 201
     })
     const id = res.json().id;
-    res = http.put (`${ENDPOINT}/${id}`, requestBody.update, {
+    const endpointWithId = `${ENDPOINT}/${id}`;
+    res = http.put (endpointWithId, requestBody.update, {
         headers: BEARER_TOKEN,
     })
     check(res, {
         'is update status 200': (res) => res.status == 200
     })
-    res = http.del (`${ENDPOINT}/${id}`, null, {
+    res = http.del (endpointWithId, null, {
         headers: BEARER_TOKEN,
     })
     check(res, {

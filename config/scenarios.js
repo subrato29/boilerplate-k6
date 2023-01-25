@@ -26,5 +26,9 @@ module.exports = {
             maxDuration: '30s',
             },
         },
+    },
+    batchReq: {
+        batch: 5,
+        batchPerHost: 5
     }
 }
