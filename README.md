@@ -63,16 +63,25 @@ Run in local
 ```
 
 Run in k6 cloud
+-------------------------
 ```
 `npm run cloud`
 ```
 
 Local run
+--------------------------
 ```
 Locally k6 run on `6565` port
 `http://127.0.0.1:6565/`
 
 If user wants to run different port, the port can be passed as argument as below
 `k6 run script.js -- address=:5050`
+
+```
+
+What is batch( requests )
+------------------------------
+```
+Batch multiple HTTP requests together to issue them in parallel over multiple TCP connections.
 
 ```
