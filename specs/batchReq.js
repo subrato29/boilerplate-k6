@@ -23,7 +23,7 @@ export default function () {
         url: endpoints.getAllUsers,
         body: requestBody.create,
         params: {
-        headers: BEARER_TOKEN,
+            headers: BEARER_TOKEN,
         },
     };
     const responses = http.batch([req1, req2, req3]);
