@@ -85,3 +85,12 @@ What is batch( requests )
 Batch multiple HTTP requests together to issue them in parallel over multiple TCP connections.
 
 ```
+
+Thresholds
+------------------
+```
+Thresholds are the pass/fail criteria that you define for your test metrics. If the performance 
+of the system under test (SUT) does not meet the conditions of your threshold, the test will finish 
+with a failed status.
+
+```
