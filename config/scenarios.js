@@ -8,22 +8,22 @@ module.exports = {
     shared: {
         discardResponseBodies: true,
         scenarios: {
-            contacts: {
-            executor: executor.shared,
-            vus: 10,
-            iterations: 200,
-            maxDuration: '30s',
+                contacts: {
+                executor: executor.shared,
+                vus: 10,
+                iterations: 200,
+                maxDuration: '30s',
             },
         },
     },
     perVu: {
         discardResponseBodies: true,
         scenarios: {
-            contacts: {
-            executor: executor.perVu,
-            vus: 10,
-            iterations: 200,
-            maxDuration: '30s',
+                contacts: {
+                executor: executor.perVu,
+                vus: 10,
+                iterations: 200,
+                maxDuration: '30s',
             },
         },
     },
