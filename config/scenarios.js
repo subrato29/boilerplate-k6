@@ -8,7 +8,7 @@ module.exports = {
     shared: {
         discardResponseBodies: true,
         scenarios: {
-                contacts: {
+            contacts: {
                 executor: executor.shared, // 200 / 10 = 20 iterations per vu, total 200 iteration
                 vus: 10,
                 iterations: 200,
@@ -19,7 +19,7 @@ module.exports = {
     perVu: {
         discardResponseBodies: true,
         scenarios: {
-                contacts: {
+            contacts: {
                 executor: executor.perVu, // 10 * 200 = 2000 iteration
                 vus: 10,
                 iterations: 200,

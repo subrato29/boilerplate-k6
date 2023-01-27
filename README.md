@@ -58,8 +58,14 @@ For macOS, using Homebrew
 Run in local
 --------------------------
 ```
-`npm run perf`
+`npm run local`
 
+```
+
+Run in single test in local
+-------------------------
+```
+`npm run perf`
 ```
 
 Run in k6 cloud

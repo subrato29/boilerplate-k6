@@ -6,7 +6,7 @@ import scenarios from '../config/scenarios.js'
 import endpoints from '../config/endpoints.js'
 
 //init
-export const options = scenarios.shared
+export let options = scenarios.shared
 
 //test scenario
 export default function () {
