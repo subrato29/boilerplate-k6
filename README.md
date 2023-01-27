@@ -65,7 +65,7 @@ Run in local
 Run in single test in local
 -------------------------
 ```
-`npm run perf`
+`npm run test`
 ```
 
 Run in k6 cloud
