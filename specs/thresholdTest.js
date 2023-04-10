@@ -8,8 +8,8 @@ export const options = {
     http_req_failed: ['rate < 0.01'], // http errors should be less than 1%
     http_req_duration: ['p(95) < 900'], // 95% of requests should be below 200ms
   },
-};
+}
 
 export default function () {
-  http.get(endpoints.getAllUsers);
+  http.get(endpoints.getAllUsers)
 }

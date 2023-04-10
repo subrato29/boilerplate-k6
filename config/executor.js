@@ -1,4 +1,4 @@
 module.exports = {
-    shared : 'shared-iterations',
-    perVu : 'per-vu-iterations'
+  shared: 'shared-iterations',
+  perVu: 'per-vu-iterations',
 }

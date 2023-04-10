@@ -10,9 +10,9 @@ export let options = scenarios.shared
 
 //test scenario
 export default function () {
-    const res = http.get (endpoints.getAllUsers);
-    check(res, {
-        'is get status 200': (res) => res.status == 200
-    })
-    sleep (1);
+  const res = http.get(endpoints.getAllUsers)
+  check(res, {
+    'is get status 200': (res) => res.status == 200,
+  })
+  sleep(1)
 }

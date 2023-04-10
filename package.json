@@ -10,5 +10,8 @@
     "pretty": "prettier --write \"**/*.js\""
   },
   "author": "Subrato Sarkar",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.8.7"
+  }
 }
