@@ -100,3 +100,10 @@ of the system under test (SUT) does not meet the conditions of your threshold, t
 with a failed status.
 
 ```
+
+Running the code formatter:
+---------------------------
+```
+npm run pretty
+
+```
